@@ -1,0 +1,100 @@
+/* General */
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+.mt-big{ margin-top: 100px; }
+body{ background-color: #000 !important; }
+
+/* Start Header */
+.header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar scroll */
+.nav_scroll{ background-color: rgb(0, 0, 0); transition: all 0.5s cubic-bezier(.215, .61, .355, 1); }
+/* End Navbar scroll */
+
+.header-content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .content_head a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.list_items{
+    display: flex;
+    margin: 0;
+}
+.list_items li{
+    padding: 0 15px;
+    list-style-type: none;
+}
+/* End Header */
+
+
+/* Hero Section & Line vh */
+.hero-bg{
+    background-color: #000;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.hero-bg .line{
+    display: flex;
+    justify-content: center;
+}
+.hero-bg .line_item{
+    opacity: 0.2;
+    height: 100vh;
+    border-right: 1px solid #fff;
+}
+
+/* Name Section */
+.name-hero{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+.opacity{ opacity: 0; }
+.opacity_show{ opacity: 0.6; }
+
+.image_none{ opacity: 0; top: 100vh;}
+.image_show{ top: 60%; }
+.image_fade_out{ top: -100vh; opacity: 0.3;}
+
+.name_matteo_morganti{
+    font-size: 190px;
+    color: #fff;
+    font-family: fantasy;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.image_matteo_morganti{
+    height: 100vh;
+    position: absolute;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+
+/* Profile */
+.profile{
+    height: 100vh;
+}
