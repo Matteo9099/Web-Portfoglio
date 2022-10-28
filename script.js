@@ -33,3 +33,14 @@ window.addEventListener('scroll', function(){
 })
 
 
+
+
+
+// Scroll reveal init
+ScrollReveal().reveal('.reveal', {
+    distance: '50px', 
+    duration: 1500,
+    easing: 'cubic-bezier(.215, .61, .355, 1)',
+    interval: 700,
+    delay: 300
+});
