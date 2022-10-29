@@ -17,17 +17,26 @@
         <div class="header-content">
             <div class="content_head">
                 <a href="" id="title_profilo" class="header_head">PORTFOGLIO</a>
-                <a id="title_name" class="text-white opacity">Matteo Morganti</a>
+                <a id="title_name" class="text-white d-none">Matteo Morganti</a>
             </div>
             <div class="content_menu">
                 <ul class="list_items">
                     <li class="text-white"><a href="#profile">Profilo</a></li>
-                    <li class="text-white"><a href="#curriculum">curriculum</a></li>
+                    <li class="text-white"><a href="#curriculum">Curriculum</a></li>
                     <li class="text-white">Giochi</li>
                 </ul>
             </div>
+            <div class="icon-hamburger">
+                <span></span>
+                <span></span>
+            </div>
             <div class="content_social">
-
+                <a class="text-dark" href="https://www.linkedin.com/in/matteo-morganti-developer">
+                    <i class="icon_header fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Matteo9099">
+                    <i class="icon_header fa-brands fa-github"></i>
+                </a>
             </div>
         </div>
     </header> 
@@ -46,8 +55,9 @@
         <div class="name-hero">
             <h1 class="name_matteo_morganti opacity">MATTEO MORGANTI</h1>
             <h1 class="profession_text opacity">WEB DEVELOPER</h1>
-            <img src="./matteo_morganti.png" alt="matteo morganti" class="image_matteo_morganti image_none">
         </div>
+        <img src="./light_hero.png" alt="matteo morganti" class="hero_light light_off">
+        <!-- <img src="./matteo_morganti.png" alt="work hard"> -->
     </div>
     <!-- End Hero -->
 
@@ -56,12 +66,12 @@
         <div class="profile-title">
             <h3 class="sec_text reveal text-white">PROFILO</h3>
         </div>
-        <div class="row">
-            <div class="col reveal">
+        <div class="row gy-5">
+            <div class="col-12 col-lg-6 reveal">
                 <img src="./realtà_virtuale.png" alt="realtà virtuale" class="img_profile">
             </div>
-            <div class="col paragraph-text mt-big">
-                <p class="reveal text_view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi sit provident natus aut! Mollitia deleniti, itaque obcaecati est sapiente beatae pariatur rem. Doloribus minima error, aliquid magni quaerat fugiat?</p>
+            <div class="col-12 col-lg-6 paragraph-text mt-big">
+                <p class="reveal text_view">Sono Matteo Morganti classe 1999 </p>
                 <p class="reveal text_view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi sit provident natus aut! Mollitia deleniti, itaque obcaecati est sapiente beatae pariatur rem. Doloribus minima error, aliquid magni quaerat fugiat?</p>
                 <p class="reveal text_view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi sit provident natus aut! Mollitia deleniti, itaque obcaecati est sapiente beatae pariatur rem. Doloribus minima error, aliquid magni quaerat fugiat?</p>
                 <p class="reveal text_view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi sit provident natus aut! Mollitia deleniti, itaque obcaecati est sapiente beatae pariatur rem. Doloribus minima error, aliquid magni quaerat fugiat?</p>
@@ -72,18 +82,18 @@
     <!-- End Profile -->
 
     <!-- Start curriculum -->
-    <section id="curriculum" class="pt-big container py-5">
+    <section id="curriculum" class="container py-5">
         <div class="profile-title">
             <h3 class="sec_text reveal text-white">CURRICULUM</h3>
         </div>
         <div class="item-container">
             <div class="row gy-5 d-flex justify-content-center">
                 <!-- Col-1 -->
-                <div class="col-md-3 cv_container reveal">
+                <div class="col-lg-3 cv_container reveal">
                     <div class="cv_title">
                         <div class="d-flex">
-                            <i class="fa-solid fa-mobile reveal"></i>
-                            <i class="fa-solid fa-desktop reveal"></i>
+                            <i class="icon_cv fa-solid fa-mobile reveal"></i>
+                            <i class="icon_cv fa-solid fa-desktop reveal"></i>
                         </div>
                         <h5 class="text-white reveal">Costruire Siti Web Responsive</h5>
                     </div>
@@ -94,10 +104,10 @@
                     </div>
                 </div>
                 <!-- Col-2 -->
-                <div class="col-md-3 cv_container reveal">
+                <div class="col-lg-3 cv_container reveal">
                     <div class="cv_title">
                         <div class="d-flex">
-                            <i class="fa-solid fa-database reveal"></i>
+                            <i class="icon_cv fa-solid fa-database reveal"></i>
                         </div>
                         <h5 class="text-white reveal">Interrogare i Database</h5>
                     </div>
@@ -108,10 +118,10 @@
                     </div>
                 </div>
                 <!-- Col-3 -->
-                <div class="col-md-3 cv_container reveal">
+                <div class="col-lg-3 cv_container reveal">
                     <div class="cv_title">
                         <div class="d-flex">
-                            <i class="fa-solid fa-laptop-code reveal"></i>
+                            <i class="icon_cv fa-solid fa-laptop-code reveal"></i>
                         </div>
                         <h5 class="text-white reveal">Creare Applicazioni Web</h5>
                     </div>

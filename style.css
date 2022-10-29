@@ -1,6 +1,6 @@
 /* General */
 *{ margin: 0; padding: 0; box-sizing: border-box; }
-body{ background-color: #000 !important; }
+body{ background-color: #000 !important; overflow-x: hidden;}
 .pt-big{ padding-top: 120px; }
 .sec_text{ font-size: 50px; }
 .text_view{ color: #fff; opacity: 0.9; font-weight: 300; }
@@ -18,6 +18,8 @@ body{ background-color: #000 !important; }
 
 /* Navbar scroll */
 .nav_scroll{ background-color: rgb(0, 0, 0); transition: all 0.5s cubic-bezier(.215, .61, .355, 1); }
+.opacity{ opacity: 0; }
+.opacity_show{ opacity: 0.6; }
 /* End Navbar scroll */
 
 .header-content{
@@ -42,6 +44,12 @@ body{ background-color: #000 !important; }
 .list_items li{
     padding: 0 15px;
     list-style-type: none;
+}
+.list_items li a{ color: #fff; text-decoration: none; }
+.icon_header{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
 }
 /* End Header */
 
@@ -76,12 +84,14 @@ body{ background-color: #000 !important; }
     width: 100%;
     text-align: center;
 }
-.opacity{ opacity: 0; }
-.opacity_show{ opacity: 0.6; }
 
 .image_none{ opacity: 0; top: 100vh;}
 .image_show{ top: 60%; }
 .image_fade_out{ top: -100vh; opacity: 0.3;}
+
+.hero_light{ position: absolute; left: 50%; }
+.light_on{ top: -15vh; transition: all 1s cubic-bezier(.215, .61, .355, 1); }
+.light_off{ top: -100vh }
 
 .name_matteo_morganti{
     font-size: 150px;
@@ -95,16 +105,10 @@ body{ background-color: #000 !important; }
     font-family: fantasy;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
-.image_matteo_morganti{
-    height: 100vh;
-    position: absolute;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-}
+
 /* End Hero */
 
-
-
-
+/* Start Profile e Cv */
 #profile, #curriculum{
     height: 100vh;
     display: flex;
@@ -128,11 +132,79 @@ body{ background-color: #000 !important; }
     border: 1px solid rgb(248, 54, 54);
 }
 
-i{
+.icon_cv{
     font-size: 35px;
     color: rgb(248, 54, 54);
     margin: 0 10px 15px 15px;
 }
 .cv_look a{
     text-decoration: none;
+}
+/* End Profile e Cv */
+
+
+/* MediaQeury */
+@media (max-width: 1200px){
+    .name_matteo_morganti{
+        font-size: 130px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .name_matteo_morganti{
+        font-size: 95px;
+    }
+    .profession_text{
+        font-size: 65px;
+    }
+    .list_items{
+        display: none;
+    }
+    .image_matteo_morganti{
+        width: 500px;
+        height: 500px;
+    }
+   
+}
+
+@media (max-width: 768px){
+    .name_matteo_morganti{
+        font-size: 70px;
+    }
+    .profession_text{
+        font-size: 50px;
+    }
+    .name-hero{
+        top: 50%;
+    }
+    .hero_light{
+        left: 0;
+        top: 0vh;
+    }
+}
+
+@media (max-width: 576px){
+    .name_matteo_morganti{
+        font-size: 50px;
+    }
+    .profession_text{
+        font-size: 35px;
+    }
+    .name-hero .image_matteo_morganti{
+        width: 400;
+        height: 400;
+    }
+}
+
+@media (max-width: 400px){
+    .name_matteo_morganti{
+        font-size: 40px;
+    }
+    .profession_text{
+        font-size: 25px;
+    }
+    .hero_light{
+        left: -30%;
+    }
 }

@@ -5,15 +5,21 @@ let title_name = document.getElementById('title_name');
 window.addEventListener('scroll',function(){
     if(window.scrollY > 200) {
         header.classList.add('nav_scroll');
-        title_profilo.classList.add('opacity');
-        title_name.classList.remove('opacity');
+        title_profilo.classList.add('d-none');
+        title_name.classList.remove('d-none');
     } else {
         header.classList.remove('nav_scroll');
-        title_profilo.classList.remove('opacity');
-        title_name.classList.add('opacity');
+        title_profilo.classList.remove('d-none');
+        title_name.classList.add('d-none');
     }
 })
 
+// SetTimeout Light
+let light = document.querySelector('.hero_light');
+setTimeout(function() {
+    light.classList.add('light_on');
+    light.classList.remove('light_off');
+},1500)
 
 // SetTimeout name 
 let name = document.querySelector('.name_matteo_morganti');
@@ -26,24 +32,6 @@ setTimeout(function(){
     prof.classList.add('opacity_show');
     prof.classList.remove('opacity')
 }, 1100)
-
-
-// SetTimeout image 
-let img = document.querySelector('.image_matteo_morganti');
-setTimeout(function(){
-    img.classList.add('image_show');
-    img.classList.remove('image_none');
-},1300);
-
-// Scroll image opacity
-window.addEventListener('scroll', function(){
-    if(window.scrollY > 400) {
-        img.classList.add('image_fade_out');
-    } else{
-        img.classList.remove('image_fade_out');
-    }
-})
-
 
 
 
